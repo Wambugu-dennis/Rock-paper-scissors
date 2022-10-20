@@ -17,7 +17,10 @@ def rock_paper_scissors():
     comps_choice = random.choice(valid_choices)
     print(f"[+]Your choice is {player_choice}, against {comps_choice}.")
 
-    # rock beats paper, paper beats rock, scissors beats paper
+    # Rules of the game are as follows:
+    # 1. rock beats paper
+    # 2. paper beats rock
+    # 3. Scissor beats paper
     if player_choice == comps_choice:
         print("[+]you Tied\n")
     elif (
