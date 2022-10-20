@@ -1,7 +1,7 @@
 import random
 
 
-def rps():
+def rock_paper_scissors():
     print("Welcome to the famous rock paper scissors game.\n")
 
     r = "rock"
@@ -30,4 +30,4 @@ def rps():
         print("[-]You lost!\n")
 
 
-rps()
+rock_paper_scissors()
