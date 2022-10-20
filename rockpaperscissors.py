@@ -2,14 +2,15 @@ import random
 
 
 def rock_paper_scissors():
-    print("Welcome to the famous rock paper scissors game.\n")
+    print("Hi, Welcome to the famous rock-paper-scissors game!\n")
+    print("Rules of the game are:\n \t#1. rock beats scissors\n \t#2. paper beats rock\n \t#3. Scissor beats paper\n")
 
     r = "rock"
     p = "paper"
     s = "scissors"
     valid_choices = (r, s, p)
 
-    player_choice = input(f"[+]Please enter your preferred choice ({r}, {p}, {s}): ")
+    player_choice = input(f"[+]Please enter your preferred choice({r}, {p}, {s}): ")
     if player_choice not in valid_choices:
         print("[-]Invalid choice! please try again\n")
         return
@@ -17,8 +18,8 @@ def rock_paper_scissors():
     comps_choice = random.choice(valid_choices)
     print(f"[+]Your choice is {player_choice}, against {comps_choice}.")
 
-    # Rules of the game are as follows:
-    # 1. rock beats paper
+    # compute syntax
+    # 1. rock beats scissors
     # 2. paper beats rock
     # 3. Scissor beats paper
     if player_choice == comps_choice:
